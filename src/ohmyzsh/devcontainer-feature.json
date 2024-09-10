@@ -1,6 +1,6 @@
 {
   "id": "ohmyzsh",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "name": "Oh My Zsh",
   "description": "Installs and configures Oh My Zsh in the dev container",
   "options": {
@@ -8,6 +8,10 @@
         "type": "string",
         "enum": ["robbyrussell","af-magic","afowler"],
         "default": "afowler"
+     },
+     "plugins":{
+          "type": "string",
+          "default":"vscode vi-mode"    
      }
   }
   
