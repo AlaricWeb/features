@@ -8,6 +8,10 @@
         "type": "string",
         "enum": ["robbyrussell","af-magic","afowler"],
         "default": "afowler"
+     },
+     "plugins":{
+          "type": "string",
+          "default":"vscode vi-mode"    
      }
   }
   
