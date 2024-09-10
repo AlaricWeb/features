@@ -1,6 +1,8 @@
 {
   "id": "ohmyzsh",
   "version": "1.0.0",
+  "name": "Oh My Zsh",
+  "description": "Installs and configures Oh My Zsh in the dev container",
   "options": {
      "theme":{
         "type": "string",
