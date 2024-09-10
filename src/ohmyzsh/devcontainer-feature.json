@@ -12,6 +12,14 @@
      "plugins":{
           "type": "string",
           "default":"vscode vi-mode"    
+     },
+     "zshrc_append":{
+        "type":"string",
+        "default":""
+     },
+     "install_dependencies":{
+      "type": "boolean",
+      "default":true
      }
   }
   

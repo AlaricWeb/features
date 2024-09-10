@@ -22,9 +22,7 @@
 
 set -e
 
-THEME=${THEME}
-PLUGINS=${PLUGINS}
-ZSHRC_APPEND=""
+
 INSTALL_DEPENDENCIES=true
 
 while getopts ":t:p:a:x" opt; do
