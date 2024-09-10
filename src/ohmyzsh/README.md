@@ -15,7 +15,7 @@ Installs and configures Oh My Zsh in the dev container
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| theme | - | string | test |
+| theme | - | string | afowler |
 
 
 
