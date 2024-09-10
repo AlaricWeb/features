@@ -21,6 +21,12 @@
 #######################################################################################################
 
 set -e
+
+THEME=default
+PLUGINS=""
+ZSHRC_APPEND=""
+INSTALL_DEPENDENCIES=true
+
 while getopts ":t:p:a:x" opt; do
     case ${opt} in
         t)  THEME=$OPTARG
@@ -135,10 +141,6 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir vcs status)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 POWERLEVEL9K_STATUS_OK=false
 POWERLEVEL9K_STATUS_CROSS=true
-VI_MODE_SET_CURSOR=true 
-VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true 
-bindkey -v 
-bindkey -M viins jj vi-cmd-mode
 EOM
 }
 
