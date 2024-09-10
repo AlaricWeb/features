@@ -21,10 +21,6 @@
 #######################################################################################################
 
 set -e
-
-
-INSTALL_DEPENDENCIES=true
-
 while getopts ":t:p:a:x" opt; do
     case ${opt} in
         t)  THEME=$OPTARG
