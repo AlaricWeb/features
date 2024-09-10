@@ -16,6 +16,9 @@ Installs and configures Oh My Zsh in the dev container
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | theme | - | string | afowler |
+| plugins | - | string | vscode vi-mode |
+| zshrc_append | - | string | - |
+| install_dependencies | - | boolean | true |
 
 
 
