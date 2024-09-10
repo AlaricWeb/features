@@ -9,17 +9,6 @@
         "enum": ["test","test2"],
         "default": "test"
      }
-  },
-  "mounts": [
-      {
-        "target": "~/.ohmyzsh",
-        "source": "~/.ohmyzsh",
-        "type": "bind"
-      },
-      {
-        "target": "~/.zshrc",
-        "source": "~/.zshrc",
-        "type":"bind"
-      }
-  ]
+  }
+  
 }

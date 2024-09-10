@@ -1,0 +1,10 @@
+{
+    "ohmyzsh": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "ohmyzsh": {
+                "greeting": "hello"
+            }
+        }
+    }
+}
