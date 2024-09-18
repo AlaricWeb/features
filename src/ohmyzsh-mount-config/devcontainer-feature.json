@@ -1,7 +1,7 @@
 {
   "id": "ohmyzsh-mount-config",
   "version": "1.0.0",
-  "name": "Oh My Zsh",
+  "name": "oh my zsh mount config  ",
   "description": "Installs and configures Oh My Zsh in the dev container",
   "mounts": [
     {
