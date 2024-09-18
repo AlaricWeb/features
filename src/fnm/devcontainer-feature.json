@@ -1,5 +1,5 @@
 {
-  "id": "fn",
+  "id": "fnm",
   "version": "1.0.0",
   "name": "fnm",
   "description": "Installs and configures Oh My Zsh in the dev container",
