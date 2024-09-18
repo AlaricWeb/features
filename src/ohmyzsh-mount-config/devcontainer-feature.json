@@ -4,21 +4,21 @@
   "name": "Oh My Zsh",
   "description": "Installs and configures Oh My Zsh in the dev container",
   "mounts": [
-      {
-         "target": "/root/.oh-my-zsh/custom/plugins",
-         "source": "/root/.oh-my-zsh/custom/plugins",
-         "type": "bind"
-      },
-      {
-         "target": "/root/.zsh_history",
-         "source": "/root/.zsh_history",
-         "type": "bind"
-      },
-      {
-         "target": "/root/.zshrc",
-         "source": "/root/.zshrc",
-         "type": "bind"
-      }
+    {
+      "target": "${localEnv:HOME}/.oh-my-zsh/custom/plugins",
+      "source": "${localEnv:HOME}/.oh-my-zsh/custom/plugins",
+      "type": "bind"
+    },
+    {
+      "target": "${localEnv:HOME}/.zsh_history",
+      "source": "${localEnv:HOME}/.zsh_history",
+      "type": "bind"
+    },
+    {
+      "target": "${localEnv:HOME}/.zshrc",
+      "source": "${localEnv:HOME}/.zshrc",
+      "type": "bind"
+    }
   ],
   "options": {
    
