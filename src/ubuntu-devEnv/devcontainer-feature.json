@@ -1,8 +1,15 @@
 {
   "id": "ubuntu-devEnv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "集成开发环境",
   "description": "Installs and configures Oh My Zsh in the dev container",
+  "mounts": [
+      {
+         "target": "/var/run/docker.sock",
+         "source": "/var/run/docker.sock",
+         "type": "bind"
+      }
+  ],
   "options": {
      "zsh":{
         "default": true,

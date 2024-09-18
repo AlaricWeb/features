@@ -21,8 +21,13 @@
 #######################################################################################################
 
 set -e
-
+apt update
 if [ "$(command -v zsh)" ]; then
      echo  ${ZSH}
     echo "command \"zsh\" exists on system"
+fi
+
+
+if [ !"$(command -v docker)" ]; then
+  apt install -y docker.io
 fi

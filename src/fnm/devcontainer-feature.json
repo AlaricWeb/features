@@ -1,6 +1,6 @@
 {
   "id": "fnm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "fnm",
   "description": "Installs and configures Oh My Zsh in the dev container",
   "options": {
