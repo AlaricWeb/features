@@ -1,5 +1,5 @@
-#!/bin/bash
-set -e 
+#!/bin/sh
+
 # 检测系统的包管理器并返回名称
 detect_package_manager() {
     if command -v apt-get >/dev/null 2>&1; then
@@ -27,25 +27,25 @@ install_packages() {
     case "$package_manager" in
         apt-get)
             echo "Using apt-get to install packages."
-             apt-get update
-             apt-get install -y $packages
+            sudo apt-get update
+            sudo apt-get install -y $packages
             ;;
         apk)
             echo "Using apk to install packages."
-             apk update
-             apk add $packages
+            sudo apk update
+            sudo apk add $packages
             ;;
         yum)
             echo "Using yum to install packages."
-             yum install -y $packages
+            sudo yum install -y $packages
             ;;
         dnf)
             echo "Using dnf to install packages."
-             dnf install -y $packages
+            sudo dnf install -y $packages
             ;;
         pacman)
             echo "Using pacman to install packages."
-             pacman -Syu --noconfirm $packages
+            sudo pacman -Syu --noconfirm $packages
             ;;
         *)
             echo "Unsupported package manager."
@@ -56,6 +56,3 @@ install_packages() {
 
 
 install_packages curl unzip ;
-
-
-curl -fsSL https://fnm.vercel.app/install | bash

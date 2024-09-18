@@ -1,5 +1,10 @@
 {
   "features": {
+    "ghcr.io/alaricweb/features/ohmyzsh-mount-config:latest": {
+      "version": "1.0.0",
+      "resolved": "ghcr.io/alaricweb/features/ohmyzsh-mount-config@sha256:a7f126ed4c98da436b204afa3fd2ec224531f6f54bb5bb6f094e3d9862168907",
+      "integrity": "sha256:a7f126ed4c98da436b204afa3fd2ec224531f6f54bb5bb6f094e3d9862168907"
+    },
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
       "version": "2.11.0",
       "resolved": "ghcr.io/devcontainers/features/docker-in-docker@sha256:503f23cd692325b3cbb8c20a0ecfabb3444b0c786b363e0c82572bd7d71dc099",

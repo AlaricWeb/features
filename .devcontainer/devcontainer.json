@@ -21,9 +21,9 @@
         }
     },
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/alaricweb/features/ohmyzsh-mount-config:latest": {}
     },
     "remoteUser": "root",
-    
     "updateContentCommand": "npm install -g @devcontainers/cli"
 }

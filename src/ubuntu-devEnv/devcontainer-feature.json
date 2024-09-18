@@ -1,0 +1,14 @@
+{
+  "id": "ubuntu-devEnv",
+  "version": "1.0.0",
+  "name": "集成开发环境",
+  "description": "Installs and configures Oh My Zsh in the dev container",
+  "options": {
+     "zsh":{
+        "default": true,
+        "type": "boolean",
+        "description": "is installde zsh ? default is true"
+     }
+  }
+  
+}
