@@ -1,0 +1,26 @@
+{
+  "id": "php-ubuntu",
+  "version": "1.0.0",
+  "name": "php-ubuntu",
+  "description": "Installs",
+  "keywords": ["php"],
+  "options": {
+      "php_version":{
+         "type": "string",
+         // php5.6 php7.0 php7.1 php7.2 php7.3 php7.4 php8.0 php8.1 php8.2
+         "enum": [
+            "5.6",
+            "7.0",
+            "7.1",
+            "7.2",
+            "7.3",
+            "7.4",
+            "8.0",
+            "8.1",
+            "8.2"
+         ],
+         "default": "7.4"
+      }
+  }
+  
+}

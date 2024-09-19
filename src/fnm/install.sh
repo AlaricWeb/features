@@ -59,3 +59,10 @@ install_packages curl unzip ;
 
 
 curl -fsSL https://fnm.vercel.app/install | bash
+
+
+
+if [ "$(command -v fnm)" ]; then
+    echo "command \"fnm\" exists on system"
+    fnm install  $NODE_VERSION
+fi

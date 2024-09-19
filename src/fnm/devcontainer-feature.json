@@ -1,9 +1,13 @@
 {
   "id": "fnm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "name": "fnm",
   "description": "Installs and configures Oh My Zsh in the dev container",
   "options": {
-     
+     "node_version":{
+         "type": "string",
+         "default": "22",
+         "description": "nodejs default version"
+     }
   }
 }
