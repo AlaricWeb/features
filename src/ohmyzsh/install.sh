@@ -14,34 +14,31 @@ install_software() {
     # 检测发行版并安装软件
     if command -v apt &> /dev/null; then
         # Debian/Ubuntu
-        sudo apt update
-        sudo apt install -y "$SOFTWARE_NAME"
+         apt update
+         apt install -y "$SOFTWARE_NAME"
 
     elif command -v dnf &> /dev/null; then
         # Fedora
-        sudo dnf install -y "$SOFTWARE_NAME"
+         dnf install -y "$SOFTWARE_NAME"
 
     elif command -v pacman &> /dev/null; then
         # Arch Linux
-        sudo pacman -Sy --noconfirm "$SOFTWARE_NAME"
+         pacman -Sy --noconfirm "$SOFTWARE_NAME"
 
     else
         echo "不支持的发行版或未找到合适的包管理器"
         return 1
     fi
-
-    echo "$SOFTWARE_NAME 安装完成"
+    hash -r
+    echo "$SOFTWARE_NAME 安装依赖完成"
 }
+
+install_software curl zsh git 
 if [ ! "$(command -v zsh)" ]; then
-     echo "$(tput setaf 1)"not install  zsh !"$(tput sgr0)"
-     install_software zsh
+     echo "not install  zsh !"
 fi
 
 if [ ! -d "{HOME}/.oh-my-zsh" ]; then
-
-   if [ ! "$(command -v curl)" ]; then
-      install_software curl
-   fi
    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
@@ -51,12 +48,12 @@ if [ -z "${ZSH_CUSTOM}" ]; then
 fi
 
 if [ ! -d "${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting" ]; then
-     echo "$(tput setaf 2)"install zsh-syntax-highlighting"$(tput sgr0)"
+     echo "install zsh-syntax-highlighting"
      git clone https://github.com/zsh-users/zsh-syntax-highlighting.git  ${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting
 fi
 
 if [ ! -d "${ZSH_CUSTOM}/plugins/zsh-autosuggestions" ]; then
-     echo "$(tput setaf 2)"zsh-autosuggestions"$(tput sgr0)"
+     echo "zsh-autosuggestions"
      git clone https://github.com/zsh-users/zsh-autosuggestions.git  ${ZSH_CUSTOM}/plugins/zsh-autosuggestions
 fi
 PLUGINS=(vi-mode zsh-syntax-highlighting zsh-autosuggestions)
